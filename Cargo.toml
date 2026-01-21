@@ -1,0 +1,19 @@
+[package]
+name = "shallows_vm"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tracing = { version = "0.1.44"}
+
+[[example]]
+name = "test_line"
+path = "examples/test_line.rs"
+
+[[example]]
+name = "test_lexer"
+path = "examples/test_lexer.rs"
+
+[dev-dependencies]
+tracing-subscriber = "0.3.22"
+tracing = "0.1.44"
