@@ -1,10 +1,11 @@
 use std::path::PathBuf;
 
 use shallows_vm::{
-    lexer::{Cursor, Lexer, TokenKind},
+    cursor::Cursor,
+    lexer::{Lexer, TokenKind},
     line_map::Lines,
 };
-use tracing::{error, info};
+use tracing::info;
 
 fn main() {
     tracing_subscriber::fmt::init();
